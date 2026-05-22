@@ -1,0 +1,105 @@
+/* Basic styling for Royal River Poker JavaFX app */
+
+.app-root {
+	-fx-background-color: linear-gradient(to bottom right, #f7f7f9 0%, #e9eef2 100%);
+	-fx-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.title-text {
+	-fx-font-size: 34px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #1f2937;
+}
+
+.subtitle-text {
+	-fx-font-size: 13px;
+	-fx-text-fill: #4b5563;
+}
+
+.panel-heading {
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+}
+
+.card-panel, .board-panel {
+	-fx-padding: 12px;
+	-fx-background-color: rgba(255,255,255,0.85);
+	-fx-border-color: #d1d5db;
+	-fx-border-radius: 8px;
+	-fx-background-radius: 8px;
+}
+
+.stats-panel {
+	-fx-padding: 8px;
+}
+
+.stat-block {
+	-fx-alignment: center-left;
+}
+
+.stat-label {
+	-fx-font-size: 12px;
+	-fx-text-fill: #374151;
+}
+
+.stat-value {
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+}
+
+.status-label {
+	-fx-font-size: 13px;
+	-fx-text-fill: #065f46;
+}
+
+.controls-bar .button, .action-button {
+	-fx-padding: 8px 12px;
+	-fx-background-color: #0369a1;
+	-fx-text-fill: white;
+	-fx-background-radius: 6px;
+	-fx-font-weight: bold;
+}
+
+.controls-bar .button:disabled, .action-button:disabled {
+	-fx-opacity: 0.5;
+}
+
+.poker-card {
+	-fx-pref-width: 90px;
+	-fx-pref-height: 130px;
+	-fx-background-color: white;
+	-fx-border-color: #111827;
+	-fx-border-radius: 6px;
+	-fx-background-radius: 6px;
+	-fx-alignment: center;
+	-fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.15), 6, 0, 0, 2);
+}
+
+.card-back {
+	-fx-background-color: linear-gradient(#111827, #0b1220);
+	-fx-text-fill: white;
+}
+
+.card-rank {
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
+
+.card-suit {
+	-fx-font-size: 18px;
+}
+
+.red-suit .card-rank, .red-suit .card-suit {
+	-fx-fill: #b91c1c;
+	-fx-text-fill: #b91c1c;
+}
+
+.black-suit .card-rank, .black-suit .card-suit {
+	-fx-fill: #111827;
+	-fx-text-fill: #111827;
+}
+
+/* small responsive tweaks */
+.app-root .card-panel {
+	-fx-min-width: 220px;
+}
